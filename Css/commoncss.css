@@ -1,0 +1,534 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.upperContainer{
+    height: 100%;
+
+
+    background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+
+}
+
+
+
+.middleContainer{
+    
+    
+    
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.6));
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0ps 40px 0px;
+
+   
+}
+
+
+.bottomlevelcontainer{
+   margin-top: 50px;
+    height: 100%;
+    width: 110vh;
+    /* border: 2px solid; */
+    box-shadow: -6px 22px 35px 20px;
+
+    background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+   
+
+}
+.navigation{
+    position: relative;
+    top:14px;
+    left: 80px;
+    /* bottom: 10px; */
+    margin-bottom: 20px;
+    width: 80%;
+    height: 35px;
+    border: 2px solid;
+    padding-top: 10px;
+    border-radius: 8px;
+    background-color: blue;
+    
+    
+    
+    }
+
+
+.unorderedList{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: yellow;
+    font: large;
+    flex-wrap: wrap;
+    
+   
+}
+.unorderedList li a{
+   
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    
+}
+.unorderedList li a:hover{
+    font-size: larger;
+    color: rgb(172, 174, 177);
+}
+
+
+
+
+
+/* 
+******************************************
+*******************************************
+            First Page 
+********************************************
+******************************************** */
+
+
+.cardContainer a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+.middlecontainer{
+ display: flex;
+ flex-flow: column wrap;
+ margin-top: 14px;
+ margin-left:10px;
+}
+.firstpageParagraph{
+    font-size: 20px;
+    margin: 12px 5px 10px 5px;
+    color: rgb(10, 10, 66);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.firstpageMiddleParagraph{
+    color: rgb(10, 10, 66);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+#image_box{
+    border-radius: 100%;
+    border-top: 2px solid white;
+    display: inline-block;
+    padding: 8px 8px 4px 9px;
+    width: 30%;
+}
+.owlimage{
+   width: 88%;
+   height: 90%;
+   margin :10px 10px 10px 14px;
+   border-radius: 100%;
+  
+}
+
+#image_box:hover{
+
+    animation-name: anii;
+    animation-duration: 1s;
+}
+
+
+@keyframes anii{
+
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+    
+
+}
+@media screen and (max-width:600px){
+    .bottomlevelcontainer{
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .middlecontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+      
+    
+    }
+
+
+
+
+    .navigation{
+        position: inherit;
+        height: 16%;
+    }
+    .unorderedList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+.photoCollage{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+}
+
+
+
+.subheadings{
+    color: blueviolet;
+}
+
+.cardContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.subphotos{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    height: 180px;
+    width: 180px;
+    margin-top: 10px;
+}
+.subphotos:hover {
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-out;
+
+    
+}
+
+.subPhotoImage{
+
+   border-radius: 10px;
+
+}
+.photoCollage{
+
+    position: relative;
+    height: 600px;
+    width: 800px;
+   
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.collageImages{
+    position: absolute;
+    border: 1px solid white;
+    
+}
+
+
+
+#photoCollage1{
+    top: 10px;
+    right: 97px;
+z-index: 4;
+}
+#photoCollage2{
+    top: 83px;
+    right: 194px;
+    z-index: 3;
+}
+
+#photoCollage3{
+    top: 135px;
+    left: 104px;
+    z-index: 2;
+}
+#photoCollage4{
+    top: 249px;
+    left: 269px;
+    z-index: 5;
+}
+#photoCollage5{
+    top: 156px;
+    right: 24px;
+    z-index: 1;
+}
+
+
+
+
+/* 
+******************************************
+*******************************************
+            Second Page 
+*******************************************
+****************************************** */
+
+/* ********************************************************************Navgation********************************************************************* */
+
+.bottomlevelcontainer2{
+    margin-top: 50px;
+    height: 320vh;
+    width: 110vh;
+    /* border: 2px solid; */
+    box-shadow: -6px 22px 35px 20px;
+
+    background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+.gridLayoutmainContainer{
+    
+    /* background-color: red; */
+    height:280vh ;
+    /* width: 100vw; */
+    display: grid;
+    margin: 10px 10px 10px 10px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 80px 80px ;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+.gridLayout{
+   
+    /* background-color: yellow; */
+    flex-wrap: wrap;
+    
+}
+#layout1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#layout2{
+    display: grid;
+    /* background-color: yellowgreen; */
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 40px;
+}
+
+
+.orangecolor{
+    background-color: orange;
+}
+.redcolor{
+    color: rgb(241, 35, 35);
+}
+
+/* ***************************************************** subGrids***************************************************************************/
+
+
+.subGridsone{
+    height: 360px;
+    width: 460px;
+    background-color: rgba(37, 37, 175, 0.3);
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+    flex-wrap: wrap;
+}
+#subgrid1{
+ background-color: transparent;
+    height: 280px;
+}
+
+
+.subGridtwo{
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(68, 68, 71, 0.3);
+
+    /* background-color: aliceblue; */
+    flex-wrap: wrap;
+}
+.page2_paragraph
+{   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.subHeadings{
+    color: rgb(70, 5, 70);
+}
+
+#subgridtwo2{
+    height: 300px;
+}
+.page2_UnorderedList{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: purple;
+    margin: 30px 10px 10px 30px;
+}
+
+.page2_orderedList{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: purple;
+    margin: 30px 10px 10px 50px;
+
+
+}
+
+
+
+/* ********************************************LIGHTBOX*********************************************************************************** */
+
+.lightbox{
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.lightbox:target {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+    /**********************************
+    Third Page Style
+    ***********************************/
+
+
+    .thirdpage_middle{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* border: 2px solid; */
+        margin: 20px 10px 10px 15px;
+        /* border-radius: 10px; */
+        color: maroon;
+        
+
+    }
+
+    .thirdpage_middle_subsections{
+background: linear-gradient( rgba(41, 89, 194, 0.2),rgba(238, 63, 159, 0.2));
+  border: 2px solid white;
+  border-radius: 9px;
+
+  padding: 25px 15px 25px 15px;
+  box-shadow: 0px 15px 20px -6px black ;
+
+    }
+
+    .bottomlevelcontainer3{
+        margin-top: 50px;
+        height: 100vh;
+        width: 110vh;
+        /* border: 2px solid; */
+        box-shadow: -6px 22px 35px 20px;
+    
+        background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+        flex-wrap: wrap;
+    }
+    .upperContainer3{
+        height: 120vh;
+    
+    
+        background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+    
+    }
+
+
+
+
+     /**********************************
+    Fourth Page Style
+    ***********************************/
+
+    .bottomlevelcontainer3{
+        margin-top: 50px;
+        height: 100vh;
+        width: 110vh;
+        /* border: 2px solid; */
+        box-shadow: -6px 22px 35px 20px;
+    
+        background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+        flex-wrap: wrap;
+    }
+    .upperContainer3{
+        height: 120vh;
+    
+    
+        background: linear-gradient(rgba(86, 86, 243,0.8),rgba(154, 205, 50,0.7),rgba(86, 86, 243,0.8));
+    
+
+    }
+
+
+    .fourthpage_container{
+        margin: 20px 15px 10px 10px;
+
+    }
+    .fourthpage_table{
+        margin: 20px 15px 10px 10px;
+        font-size:30px;
+        color: rgb(134, 31, 134);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 4px 4px 4px 4px;
+      }
+      th, td {
+       background: linear-gradient( rgba(63, 63, 241, 0.3),rgba(236, 109, 130, 0.3));
+       padding: 20px 40px 20px 40px;
+
+      }
+
+    
